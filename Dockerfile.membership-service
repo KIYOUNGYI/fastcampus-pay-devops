@@ -9,4 +9,4 @@ RUN ./gradlew build -p membership-service
 EXPOSE 8080
 
 ENTRYPOINT ["java","-jar",\
-            "membership-service/build/libs/membership-service-1.0.0.jar"]
+            "membership-service/build/libs/membership-service.jar"]
