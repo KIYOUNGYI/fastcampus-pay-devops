@@ -13,7 +13,6 @@ on:
 jobs:
 
   build:
-    echo 
 
     runs-on: ubuntu-latest
 
