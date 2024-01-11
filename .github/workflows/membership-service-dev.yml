@@ -44,3 +44,4 @@ jobs:
         repository: KIYOUNGYI/fastcampus-pay-helm-charts
         path: helm-chart
         ref: main
+        ssh-key: $ {{ secrets.HELM_CHARTS_REPO_KEY }}
