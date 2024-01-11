@@ -41,7 +41,7 @@ jobs:
     - name: Checkout Helm Repository
       uses: actions/checkout@v3
       with:
-        repository: https://github.com/KIYOUNGYI/fastcampus-pay-helm-charts
+        repository: KIYOUNGYI/fastcampus-pay-helm-charts
         path: helm-chart
         ref: main
         ssh-key: $ {{ secrets.HELM_CHARTS_REPO_KEY }}
