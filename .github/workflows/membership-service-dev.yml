@@ -13,6 +13,7 @@ on:
 jobs:
 
   build:
+    echo 
 
     runs-on: ubuntu-latest
 
@@ -51,7 +52,7 @@ jobs:
     - name: Change Image tag of the Helm value
       uses: mikefarah/yq@v4.34.1
       with:
-        cmd: yq -i '.image.tag = ${{env.BUILD_ID}}' helm-chart/${{env.HELM_VALUE}}
+        cmd: yq -i '.image.tag = "${{env.BUILD_ID}}"' helm-chart/${{env.HELM_VALUE}}
         
     - name: Commit and Push HELM changes
       run: |
