@@ -11,9 +11,8 @@ on:
     branches: [ "devops2" ]
     
 jobs:
-
+  echo "BUILD_ID->${{github.sha}}"
   build:
-
     runs-on: ubuntu-latest
 
     steps:
