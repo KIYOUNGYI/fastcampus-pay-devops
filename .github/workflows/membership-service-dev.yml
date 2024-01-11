@@ -41,6 +41,6 @@ jobs:
     - name: Checkout Helm Repository
       uses: actions/checkout@v3
       with:
-        repository: attachplay/fastcampus-pay-helm-charts
+        repository: attachplay/fastcampus-pay-helm-chart
         path: helm-chart
         ref: main
